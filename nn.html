@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول المراجعة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* تنسيق الجدول */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* التأثير عند التحويم على الجدول */
+        table:hover {
+            transform: scale(1.02); /* تكبير الجدول قليلاً */
+        }
+
+        /* تنسيق العنوان */
+        caption {
+            font-size: 2.2em;
+            padding: 20px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1.5px;
+        }
+
+        /* تنسيق خلايا الرأس */
+        th {
+            background: #388E3C;
+            color: white;
+            padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+        }
+
+        /* تنسيق خلايا البيانات */
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* تأثير الظلال على الصفوف */
+        tr {
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* صفوف بألوان متناوبة */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* تأثير التحويم على الصفوف */
+        tr:hover {
+            background-color: #f1f1f1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تنسيق الخلايا التي تحتوي على rowspan */
+        td[rowspan] {
+            background-color: #e0f7fa;
+            font-weight: bold;
+            color: #00796B;
+            font-size: 1.2em;
+            border-left: 4px solid #00796B; /* شريط جانبي */
+        }
+
+        /* إضافة أيقونات للمواد */
+        td i {
+            margin-right: 5px;
+            color: #388E3C;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>مراجعة محمود السبوعي</caption>
+        <tr>
+            <th>الايام</th>
+            <th>المادة</th>
+            <th>الكمية</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><i class="fas fa-dna"></i> الاحياء</td>
+            <td rowspan="4">فصل الثاني</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><i class="fas fa-language"></i> النكليزي</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><i class="fas fa-flask"></i> الكيمياء</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><i class="fas fa-square-root-alt"></i> رياضيات</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><i class="fas fa-atom"></i> الفيزياء</td>
+            <td>فصل الاول-الثاني</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><i class="fas fa-book"></i> عربي</td>
+            <td>نفي-15 ورقة ادب</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><i class="fas fa-pray"></i> اسلامية</td>
+            <td>3 مواضيع</td>
+        </tr>
+    </table>
+
+</body>
+</html>
